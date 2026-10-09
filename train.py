@@ -12,7 +12,7 @@ housing = fetch_california_housing(as_frame=True)
 X = housing.data
 y = housing.target
 
-X_train, X_val, y_train, y_val = train_test_split(X, y, test_test_split=0.2, random_state=42)
+X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=0.2, random_state=42)
 
 experiments = [
     {"run_name": "Run 1", "max_depth": 3, "learning_rate": 0.1},
